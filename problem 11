@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double weight1, price1, weight2, price2;
+
+    cout << "Enter weight and price for package 1: ";
+    cin >> weight1 >> price1;
+
+    cout << "Enter weight and price for package 2: ";
+    cin >> weight2 >> price2;
+
+    double unitPrice1 = price1 / weight1;
+    double unitPrice2 = price2 / weight2;
+
+    if (unitPrice1 < unitPrice2) {
+        cout << "Package 1 has a better price" << endl;
+    } else if (unitPrice2 < unitPrice1) {
+        cout << "Package 2 has a better price" << endl;
+    } else {
+        cout << "Two packages have the same price" << endl;
+    }
+
+    return 0;
+}
