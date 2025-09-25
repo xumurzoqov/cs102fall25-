@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double x, y;
+    cout << "Enter coordinates (x y): ";
+    cin >> x >> y;
+
+
+    double distanceSquared = pow(x, 2) + pow(y, 2);
+    
+    if (distanceSquared <= 100) {
+        cout << "Point (" << x << "," << y << ") is in the circle" << endl;
+    } else {
+        cout << "Point (" << x << "," << y << ") is not in the circle" << endl;
+    }
+
+    return 0;
+}
